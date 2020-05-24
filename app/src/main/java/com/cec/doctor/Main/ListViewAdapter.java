@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.cec.doctor.Main.AnimalNames;
 import com.cec.doctor.R;
 
 import java.util.ArrayList;
@@ -17,12 +16,12 @@ import java.util.Locale;
 
 public class ListViewAdapter extends BaseAdapter {
     private LayoutInflater inflater;
-    private List<AnimalNames> animalNamesList;
-    private ArrayList<AnimalNames> arraylist;
+    private List<PatientNames> patientNamesList;
+    private ArrayList<PatientNames> arraylist;
 
-  ListViewAdapter(Context context, Collection<? extends AnimalNames> animalNamesList) {
+  ListViewAdapter(Context context, Collection<? extends PatientNames> animalNamesList) {
       //    variables
-      this.animalNamesList = (List<AnimalNames>) animalNamesList;
+      this.patientNamesList = (List<PatientNames>) animalNamesList;
       inflater = LayoutInflater.from(context);
       this.arraylist = new ArrayList<>();
       this.arraylist.addAll(animalNamesList);
@@ -38,12 +37,12 @@ public class ListViewAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return animalNamesList.size();
+        return patientNamesList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return animalNamesList.get(position);
+        return patientNamesList.get(position);
     }
 
     @Override
@@ -65,20 +64,20 @@ public class ListViewAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         // Set the results into TextViews
-        holder.name.setText(animalNamesList.get(position).getAnimalName());
+        holder.name.setText(patientNamesList.get(position).getAnimalName());
         return view;
         }
 
     // Filter Class
     void filter(String charText) {
         charText = charText.toLowerCase(Locale.getDefault());
-        animalNamesList.clear();
+        patientNamesList.clear();
         if (charText.length() == 0) {
-            animalNamesList.addAll(arraylist);
+            patientNamesList.addAll(arraylist);
         } else {
-            for (AnimalNames wp : arraylist) {
+            for (PatientNames wp : arraylist) {
                 if (wp.getAnimalName().toLowerCase(Locale.getDefault()).contains(charText)) {
-                    animalNamesList.add(wp);
+                    patientNamesList.add(wp);
                 }
             }
         notifyDataSetChanged();

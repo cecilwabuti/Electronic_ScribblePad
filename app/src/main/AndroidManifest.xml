@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".User.User"
+            android:name=".User"
             android:label="@string/title_activity_user"
             android:parentActivityName=".Main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -26,10 +26,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cec.doctor.Main.MainActivity" />
         </activity>
-        <activity android:name=".User.CreatePage">
+        <activity android:name=".CreatePage">
         </activity>
-        <activity android:name=".Exams" />
-        <activity android:name=".Prescription" />
+        <activity android:name=".Scribbles.Exams" />
+        <activity android:name=".Scribbles.Prescription" />
         <activity android:name=".Main.ListViewAdapter$ListItemDetail" />
         <activity android:name=".Gallery.ImageMainActivity" />
         <activity android:name=".Gallery.FullImageActivity" />

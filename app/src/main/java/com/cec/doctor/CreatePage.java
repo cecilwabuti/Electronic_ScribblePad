@@ -1,4 +1,4 @@
-package com.cec.doctor.User;
+package com.cec.doctor;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -9,9 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.cec.doctor.Exams;
-import com.cec.doctor.Prescription;
-import com.cec.doctor.R;
+import com.cec.doctor.Scribbles.Exams;
+import com.cec.doctor.Scribbles.Prescription;
 
 public class CreatePage extends AppCompatActivity {
     TextView textView;

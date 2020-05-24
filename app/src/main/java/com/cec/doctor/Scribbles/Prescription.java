@@ -1,4 +1,4 @@
-package com.cec.doctor;
+package com.cec.doctor.Scribbles;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -24,6 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.cec.doctor.R;
 import com.github.gcacace.signaturepad.views.SignaturePad;
 
 import java.io.File;

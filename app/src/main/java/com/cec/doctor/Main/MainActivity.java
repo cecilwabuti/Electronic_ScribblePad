@@ -11,7 +11,7 @@ import android.widget.SearchView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cec.doctor.R;
-import com.cec.doctor.User.User;
+import com.cec.doctor.User;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     SearchView editSearch;
     ListViewAdapter adapter1;
     String[]  animalNameList;
-    ArrayList<AnimalNames> arraylist = new ArrayList<>();
+    ArrayList<PatientNames> arraylist = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
 
         for (String s : animalNameList) {
-            AnimalNames animalNames = new AnimalNames(s);
+            PatientNames patientNames = new PatientNames(s);
 //            binds  strings
-            arraylist.add(animalNames);
+            arraylist.add(patientNames);
         }
 //        pass results to listViewAdapter class
         adapter1 = new ListViewAdapter(this,arraylist);

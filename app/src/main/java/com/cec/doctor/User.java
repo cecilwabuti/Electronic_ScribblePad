@@ -1,4 +1,4 @@
-package com.cec.doctor.User;
+package com.cec.doctor;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -10,7 +10,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cec.doctor.Gallery.ImageMainActivity;
-import com.cec.doctor.R;
 
 public class User extends AppCompatActivity {
 

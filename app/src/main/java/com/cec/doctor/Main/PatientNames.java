@@ -1,13 +1,13 @@
 package com.cec.doctor.Main;
 
-public class AnimalNames {
+class PatientNames {
     private String animalName;
 
-    public AnimalNames(String animalName) {
+    PatientNames(String animalName) {
         this.animalName = animalName;
     }
 
-    public String getAnimalName() {
+    String getAnimalName() {
         return this.animalName;
     }
 }
