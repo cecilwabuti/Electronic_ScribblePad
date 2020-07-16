@@ -22,8 +22,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import com.cec.doctor.CreatePage;
 import com.cec.doctor.R;
+import com.cec.doctor.User;
 import com.github.gcacace.signaturepad.views.SignaturePad;
 
 import java.io.File;
@@ -182,10 +182,10 @@ public class Exams extends AppCompatActivity {
 
     }
 
+
     public void SavedE(View view) {
-        Intent intent  = new Intent(Exams.this, CreatePage.class);
+        Intent intent  = new Intent(Exams.this, User.class);
         startActivity(intent);
         Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
     }
-
 }

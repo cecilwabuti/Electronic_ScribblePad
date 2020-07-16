@@ -25,7 +25,7 @@ public class ImageMainActivity extends Activity implements MediaScannerConnectio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery_grid_layout);
-//        getWindow().getDecorView().setBackgroundColor(Color.BLUE);
+
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -33,9 +33,7 @@ public class ImageMainActivity extends Activity implements MediaScannerConnectio
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view,"Refreshed.",Snackbar.LENGTH_LONG)
-                        .setAction("Action",null).show();
-                startScan();
+               startScan();
             }
         });
 
@@ -50,7 +48,7 @@ public class ImageMainActivity extends Activity implements MediaScannerConnectio
 
 
         /*
-          On Click event for Single Gridview Item
+          On Click event for Single Grid_view Item
           */
         gridViewE.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -79,12 +77,7 @@ public class ImageMainActivity extends Activity implements MediaScannerConnectio
 
     }
     private void startScan() {
-//        if (conn != null) {
-//            conn.disconnect();
-//        }
-//
-//        conn = new MediaScannerConnection(this,this);
-//        conn.connect();
+
     }
 
 
@@ -97,17 +90,6 @@ public class ImageMainActivity extends Activity implements MediaScannerConnectio
     @Override
     public void onScanCompleted(String path,Uri uri) {
 
-//        try {
-//            Log.d("onScanCompleted",uri + "success" + conn);
-//            if (uri != null) {
-//                Intent intent = new Intent(Intent.ACTION_VIEW);
-//                intent.setData(uri);
-//                startActivity(intent);
-//            }
-//        } finally {
-//            conn.disconnect();
-//            conn = null;
-//        }
 
     }
 }

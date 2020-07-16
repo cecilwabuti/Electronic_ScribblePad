@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "26855482169",
+    "firebase_url": "https://medicalnotepad-6774f.firebaseio.com",
+    "project_id": "medicalnotepad-6774f",
+    "storage_bucket": "medicalnotepad-6774f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26855482169:android:01f6e362ff934dfccf3ee8",
+        "android_client_info": {
+          "package_name": "com.cec.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26855482169-j9qtll3tsrrvjel9nn1bsqqgqh1lj4ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkwCfGmSlbGarORV9mA-KyhL0qFZKgJ1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26855482169-j9qtll3tsrrvjel9nn1bsqqgqh1lj4ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26855482169:android:e66102ac1d6fe447cf3ee8",
+        "android_client_info": {
+          "package_name": "com.example.pavneet_singh.roomdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26855482169-j9qtll3tsrrvjel9nn1bsqqgqh1lj4ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkwCfGmSlbGarORV9mA-KyhL0qFZKgJ1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26855482169-j9qtll3tsrrvjel9nn1bsqqgqh1lj4ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

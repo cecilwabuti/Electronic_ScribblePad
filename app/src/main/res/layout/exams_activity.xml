@@ -52,14 +52,14 @@
 
           <Button
               android:id="@+id/save_button"
-              android:layout_width="206dp"
+              android:layout_width="294dp"
               android:layout_height="wrap_content"
               android:layout_weight="1"
               android:clickable="true"
-              android:onClick="SavedE"
               android:enabled="false"
-              android:text="@string/save_examination"
-              android:focusable="true" />
+              android:focusable="true"
+              android:onClick="SavedE"
+              android:text="@string/save_examination" />
      </LinearLayout>
 
 </RelativeLayout>

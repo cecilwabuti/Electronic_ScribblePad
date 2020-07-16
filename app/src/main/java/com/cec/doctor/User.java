@@ -10,6 +10,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cec.doctor.Gallery.ImageMainActivity;
+import com.cec.doctor.Scribbles.Exams;
+import com.cec.doctor.Scribbles.Prescription;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class User extends AppCompatActivity {
 
@@ -20,7 +23,8 @@ public class User extends AppCompatActivity {
         setContentView(R.layout.activity_user);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        Button fab = findViewById(R.id.fab);
+
+        FloatingActionButton fabadd = findViewById(R.id.fabadd);
         Button fab1 =findViewById(R.id.records);
         TextView textView = findViewById(R.id.textView);
 
@@ -32,12 +36,13 @@ public class User extends AppCompatActivity {
         textView.setText(TempHolder);
 
 
-//        to create page
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        fabadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),CreatePage.class));
+
+                startActivity(new Intent(view.getContext(),Prescription.class));
+                startActivity(new Intent(view.getContext(),Exams.class));
 
             }
         });
